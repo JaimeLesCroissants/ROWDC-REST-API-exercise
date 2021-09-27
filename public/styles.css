@@ -1,0 +1,8 @@
+.frm{
+	display: flex;
+	flex-direction: column;
+	
+}
+.dv{
+	margin: 5px 2px;
+}

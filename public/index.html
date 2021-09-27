@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>RestFull app</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<h1>Product Shop</h1>
+	<h2>Show all products</h2>
+	<button id="show">Show</button>
+	<ul id="list"></ul>
+
+	<div>
+		<h2>Add product</h2>
+		<form action="POST" class="frm">
+			<div class="dv">
+				<label for="addProd">Product:</label>
+				<input type="text" id="productAdd" name="addProd">
+			</div>
+			<div class="dv">
+				<label for="addPrice">Price:</label>
+				<input type="text" id="priceAdd" name="addPrice">
+			</div>
+		
+		</form>
+		<button id="add-but">Add</button>
+	</div>
+	<div>
+		<h2>Update price</h2>
+		<form action="POST" class="frm">
+			<div class="dv">
+				<label for="updProd">Product ID:</label>
+				<input type="number" id="productUpd" name="updProd">
+			</div>
+			<div class="dv">
+				<label for="updPrice">New Price:</label>
+				<input type="text" id="priceUpd" name="updPrice">
+			</div>
+		
+		</form>
+		<button id="upd-but">Update</button>
+	</div>
+	<div>
+		<h2>Delete product</h2>
+		<form action="POST" class="frm">
+			<div class="dv">
+				<label for="delProd">Product ID:</label>
+				<input type="number" id="productDel" name="delProd">
+			</div>
+		</form>
+		<button id="del-but">Delete</button>
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
